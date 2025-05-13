@@ -1,0 +1,18 @@
+.navbar{
+      display: flex;
+  flex-wrap: wrap;
+    height: 100%;
+    width: 4vw;
+    background-color: var(--background);
+    box-shadow: -2px 0px 5px var(--foregroundHalf);
+    z-index: 2;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.navIcon{
+  height: 2rem;
+  aspect-ratio: 1/1;
+  background-color: var(--foregroundHalf);
+  border-radius: 100vh;
+}

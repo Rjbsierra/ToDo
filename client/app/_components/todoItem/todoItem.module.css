@@ -1,0 +1,121 @@
+.item{
+    width: 80%;
+    height: 5rem;
+    background-color: var(--background);
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px var(--foregroundHalf);
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.section{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section--checkbox{
+    width: 10%;
+}
+.section--text{
+    width: 80%;
+}
+.section--button{
+    width: 10%;
+}
+
+.checkbox{
+    height: 3rem;
+    aspect-ratio: 1/1;
+    background-color: var(--foregroundHalf);
+    border-radius: 100vh;
+    box-shadow: inset 0px 2px 2px var(--backgroundHalf);
+        transition: ease-in 50ms;
+}
+.checkbox:hover{
+     background-color: var(--foreground);
+     transition: ease-out 50ms;
+     cursor: pointer;
+}
+.checkbox:active{
+    background-color: var(--accent);
+    transition: ease-in 50ms;
+
+}
+
+.container-text{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 0;
+    overflow: hidden;
+        transition: ease-in 100ms;
+     transform: translateX(0%);
+}
+.container-text::before{
+        content: '';
+        position: absolute;
+    background: linear-gradient(to right, var(--foregroundHalf), var(--background));
+    cursor:pointer;
+    transition: ease-in 100ms;
+     transform: translateX(-100%);
+         z-index: -1;
+
+}
+.container-text:hover{
+    cursor:pointer;
+     
+}
+.container-text:hover::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+          transition: ease-out 100ms;
+    transform: translateX(0%);
+  
+
+}
+.text{
+    color: var(--foreground);
+        padding-left: 1rem;
+
+}
+.button{
+     height: 3rem;
+    aspect-ratio: 1/1;
+    background-color:  var(--action2);
+    outline: 0;
+    border: 0;
+    border-radius: 100vh;
+    transition: ease-out 50ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button:hover{
+    background-color: var(--action2Highlight);
+    transition: ease-out 50ms;
+    cursor: pointer;
+}
+.button:focus{
+    outline: 0;
+    border: 0;
+}
+
+.button:active{
+    outline: 0;
+    border: 0;
+}
+
+.icon-btn{
+    width: 1rem;
+    height: 1rem;
+}

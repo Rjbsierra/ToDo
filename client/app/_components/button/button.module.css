@@ -1,0 +1,27 @@
+.button{
+    width:fit-content;
+    padding: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 100vh;
+    outline: 0;
+    border: 0;
+    background-color: var(--action1);
+    color: var(--background);
+    transition: ease-out 50ms;
+    font-size: 1rem;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: var(--action1Highlight);
+        transition: ease-in 50ms;
+}
+.button:focus{
+    outline: 0;
+    border: 0;
+}
+
+.button:active{
+    outline: 0;
+    border: 0;
+}
